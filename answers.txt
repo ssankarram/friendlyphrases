@@ -1,0 +1,4 @@
+let text = `{'0.0': 'messing stupefied'
+'-1.0': 'pretty stunned'
+'-2.0': 'very unintelligent'
+}`
