@@ -15,8 +15,8 @@ run python3 scoring.py in the console
 
 ``` Rather, try the following:
 50% positive: I dislike this weather. It makes me feel down.
-28% positive: I detest this weather. It makes me feel lousy.
-16% positive: I don't like this weather. It makes me feel low.
+28% positive: I don't like this weather. It makes me feel low.
+16% positive: I detest this weather. It makes me feel lousy.
 ``` 
 
 ## Built With 
