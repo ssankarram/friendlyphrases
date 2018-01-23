@@ -47,6 +47,7 @@ afinn_score = 0
 synonyms = {}
 final_good_sentences = {}
 
+#implement this whole part with google nl api instead of try/except blocks
 for i in range(5):
     bad_phrase_good = bad_phrase
     for key in negative_words:
@@ -54,8 +55,18 @@ for i in range(5):
             len_ = len(cursewords_in_phrase[key])
             synonyms[key] = cursewords_in_phrase[key][random.randint(0, len_-1)]
         else:
-            len_ = len(links[key]["adjective"]['syn'])
-            synonyms[key] = links[key]["adjective"]['syn'][random.randint(0,len_-1)]
+            word = "adjective"
+            try:
+                len_ = len(links[key]["adjective"]['syn'])
+            except:
+                try:
+                    word = "verb"
+                    len_ = len(links[key][word]['syn'])
+                except:
+                    word = "noun"
+                    len_ = len(links[key][word]['syn'])
+                
+            synonyms[key] = links[key][word]['syn'][random.randint(0,len_-1)]
     for key in synonyms:
         bad_phrase_good = bad_phrase_good.replace(key, synonyms[key])
     afinn_score = afinn.score(bad_phrase_good)

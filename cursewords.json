@@ -51,6 +51,10 @@
     "crap": {
       "word": "crap",
       "synonyms": "nonsense, foolish, stupid"
+    },
+    "crappy":{
+      "word": "crappy",
+      "synonyms": "lousy, down, low"
     }
   }
 }
