@@ -1,5 +1,5 @@
 # friendlyphrases 
-program to help curb the urge of using profanity/negativity in speech by suggesting sentences with greater positive connotation, implemented using sentiment analysis via afinn python package index, apis (thesaurus, google natural language) 
+program to help curb the urge of using profanity/negativity in speech by suggesting sentences with greater positive connotation, implemented using sentiment analysis via afinn python package index, apis (thesaurus, google natural language (future, for grammar) 
 
 **warning**
 cursewords.json is **NSFW.** 
